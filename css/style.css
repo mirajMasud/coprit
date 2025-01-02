@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('../fonts/Gilroy-Bold.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('../fonts/Gilroy-Medium.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('../fonts/Gilroy-Regular.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'ProductSans-Bold';
+    src: url('../fonts/ProductSans-Bold.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'ProductSans-Medium';
+    src: url('../fonts/ProductSans-Medium.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'ProductSans-Regular';
+    src: url('../fonts/ProductSans-Regular.ttf') format('truetype');
+}
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1280px;
+    }
+}
+
+:root{
+    --c-brand:#F4A640;
+    --c-brand-white:#FFFFFF;
+    --c-brand-blue:#1664F9;
+    --text-color:#0A0951;
+    --text-color-light:#E8E8E8;
+
+}
+body{
+    background-color: #1E1E1E;
+    color: var(--c-brand-white);
+}
+.btn{
+    font-weight: 700;
+    font-weight: 16px;
+    font-family: "Nunito", serif ;
+    border: none;
+
+
+}
+.btn-brand{
+    background-color: var(--c-brand);
+    color: black;
+    border-radius: 6px;
+   padding: 12px 24px;
+
+}
+.btn-brand:hover{
+    color: var(--c-brand);
+}
+.btn-brand-light{
+    color: var(--c-brand-white);
+    margin-right: 30px;
+    margin-left: 150px;
+    padding: 12px 24px;  
+}
+.btn-brand-light:hover{
+    background-color: var(--c-brand);
+    color: black;
+    border-radius: 6px;
+   
+}
+.tag {
+    font-weight: 400;
+    font-size: 22px;
+    font-family: "ProductSans-Regular";
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: var(--c-brand);
+}
+
+.tag .line {
+    background-color: var(--c-brand);
+    height: 2px;
+    width: 80px;
+}
+.section-padding{
+    margin-top: 120px;
+}
+
+
+/* Navbar */
+.navbar{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.nav-link{
+    font-family: "Nunito", serif;
+    font-weight: 600;
+    color: var(--c-brand-white);
+    padding-right: 24px;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover{
+    color: var(--c-brand);
+}
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+.bg-navbar{
+    background-color: #ffc37541 ;
+}
+
+
+
+/* Hero section */
+#hero{
+    height: 90vh;
+    width: 100%;
+    padding-top: 100px;
+}
+.hero-title{
+    font-family: "Gilroy-Bold";
+    font-size: 65px;
+    margin-top: 26px;
+    margin-bottom: 16px;
+}
+.hero-description{
+    font-family: "ProductSans-Regular" ;
+    font-size: 18px;
+    color: var(--text-color-light);
+    margin-bottom: 50px;
+}
+.btn-light-hero{
+    margin-left: 20px;
+}
+
+/* About us */
+.a-card{
+    width: 100%;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image-container{
+    background-color: #EB5757;
+    height: 104px;
+    width: 104px;
+    border-radius: 100%;
+    padding: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 26px;
+    
+    box-shadow: -31px 28px 140px #EB5757 ;
+}
+.about-title{
+    font-family: "Gilroy-Bold";
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+.about-description{
+    font-family: "Nunito", serif;
+    width: 400;
+    font-size: 19px;
+    color: var(--text-color-light);
+    line-height: 32px;
+}
+
+
+/* service */
+.service-title{
+    font-family: "Gilroy-Bold";
+    font-size: 43px;
+    margin-bottom: 22px;
+}
+.secvice-description{
+    font-family: "Nunito", serif;
+    width: 400;
+    font-size: 19px;
+    color: var(--text-color-light);
+    margin-bottom: 60px;
+}
+
+
+
+/* pricing */
+.p-margin{
+    margin-bottom: 84px;
+}
+.card {
+    background: linear-gradient(to bottom, #3a3a3a, #555); /* Gradient background */
+    color: white;
+    border: 1.4px solid #ffffff9a;
+}
+
+.btn-warning {
+    background-color: #f4a640;
+    border: none;
+    color: #fff;
+}
+
+.btn-warning:hover {
+    background-color: #e69a35;
+}
+label{
+    padding-bottom: 22px;
+    font-family:"ProductSans-Regular";
+    font-size: 22px;
+}
+input , .form-select{
+    height: 58px;
+    font-size: 18px; 
+     
+    font-family: "Gilroy-Bold";
+
+}
+.form-label {
+     margin-bottom: 0;
+}
+::placeholder ,option{
+    font-size: 18px; 
+    color: #ccc; 
+    font-family: "Gilroy-Bold";
+}
+.btn-p{
+    margin-top: 20px;
+}
+.card{
+    padding: 52px;
+}
+.form-select{
+    background-size: 759px 17px;
+}
