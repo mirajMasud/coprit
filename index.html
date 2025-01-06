@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
     <title></title>
 </head>
@@ -35,6 +36,9 @@
 
     <!-- Hero section -->
      <Section id="hero">
+        <div class="hero-blur">
+            <img src="./image/blur-top.png" alt="">
+        </div>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -55,6 +59,7 @@
                 </div>
             </div>
         </div>
+        
      </Section>
 
      <!-- About Us -->
@@ -97,7 +102,7 @@
      </section>
 
      <!-- services -->
-     <Section class="section-padding">
+     <Section class="section-padding" id="service">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5">
@@ -119,10 +124,13 @@
                 </div>
             </div>
         </div>
+        <div class="service-blur">
+            <img src="./image/service-blur.png" alt="">
+        </div>
      </Section>
 
      <!-- pricing -->
-     <Section class="section-padding">
+     <Section class="section-padding" id="pricing">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -175,25 +183,204 @@
                 </div>
             </div>
         </div>
+        <div class="pricing-blur">
+            <img src="./image/pricing blur.png" alt="">
+        </div>
      </Section>
 
 
-     <Section class="section-padding">
-        <div class="container">
+     <Section class="section-padding blog-main">
+        <div class="container blog-main-wrapper">
             <div class="row align-items-center">
                 <div class="col-lg-5">
                     <div class="tag">
                         <p>Exchange here is it now</p>
                         <div class="line"></div>
                     </div>
-                    <h1 class="service-title">Crypto & Bitcoin <br>
-                        Exchange Letest Blog 
-                        </h1>   
+                    <h1 class="service-title b-main-title">Crypto & Bitcoin <br>
+                        Exchange Latest Blog 
+                    </h1>   
                 </div>
+            </div>
+            <div class="swiper blog-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="blog">
+                            <div class="img-container">
+                                <img src="./image/blog-image.png" alt="">
+                            </div>
+                            <p class="keyword">Bitcoins</p>
+                            <h5 class="blog-title">Python for Data Science
+                                & Machine Learning Bootcamp
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blog">
+                            <div class="img-container">
+                                <img src="./image/blog-image.png" alt="">
+                            </div>
+                            <p class="keyword">Bitcoins</p>
+                            <h5 class="blog-title">Python for Data Science
+                                & Machine Learning Bootcamp
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blog">
+                            <div class="img-container">
+                                <img src="./image/blog-image.png" alt="">
+                            </div>
+                            <p class="keyword">Bitcoins</p>
+                            <h5 class="blog-title">Python for Data Science
+                                & Machine Learning Bootcamp
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blog">
+                            <div class="img-container">
+                                <img src="./image/blog-image.png" alt="">
+                            </div>
+                            <p class="keyword">Bitcoins</p>
+                            <h5 class="blog-title">Python for Data Science
+                                & Machine Learning Bootcamp
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="blog-slider-navigator">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
             </div>
         </div>
      </Section>
 
+
+     <footer class="section-padding">
+        <div class="blur-footer">
+            <img src="./image/footer blur.png" alt="">
+        </div>
+        <div class="container ">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <img class="logo-light" src="./image/logo-2.png" alt="">
+                        <p class="footer-first">This is the team that specializes in making sure  in the find it a
+                            your interior looks cool
+                        </p>
+                        <div class="icon-container">
+                            <div class="icon">
+                                <div class="circle">
+                                    <svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="change-color" d="M9.64745 10.6522L10.1326 7.46429H7.04863V5.38524C7.04863 4.48432 7.46444 3.6527 8.85048 3.6527H10.2712V0.915285C10.2712 0.915285 8.98908 0.672729 7.7763 0.672729C5.24679 0.672729 3.58355 2.23202 3.58355 5.00408V7.46429H0.742188V10.6522H3.58355V18.4139H7.04863V10.6522H9.64745Z" fill="#1664F9"/>
+                                    </svg>                                                                                
+                                </div>
+                            </div>
+                            <div class="icon">
+                                <div class="circle">
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="change-color" d="M4.40258 16.4292V6.06863H1.18006V16.4292H4.40258ZM2.77399 4.6826C3.81352 4.6826 4.64514 3.81632 4.64514 2.7768C4.64514 1.77193 3.81352 0.940308 2.77399 0.940308C1.76912 0.940308 0.9375 1.77193 0.9375 2.7768C0.9375 3.81632 1.76912 4.6826 2.77399 4.6826ZM16.4264 16.4292H16.4611V10.7465C16.4611 7.97442 15.8373 5.82607 12.5802 5.82607C11.0209 5.82607 9.98136 6.69234 9.5309 7.48931H9.49625V6.06863H6.41233V16.4292H9.63485V11.3009C9.63485 9.94952 9.87741 8.66744 11.5406 8.66744C13.2039 8.66744 13.2385 10.1921 13.2385 11.4049V16.4292H16.4264Z" fill="#1664F9"/>
+                                    </svg>                                        
+                                </div>
+                            </div>
+                            <div class="icon">
+                                <div class="circle">
+                                    <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="change-color" d="M13.3655 5.92429H7.05908V8.21125H10.836C10.6974 9.18147 9.69254 11.0873 7.05908 11.0873C4.80678 11.0873 2.93564 9.21612 2.93564 6.85987C2.93564 4.53826 4.80678 2.66712 7.05908 2.66712C8.37581 2.66712 9.24208 3.22153 9.7272 3.70664L11.529 1.9741C10.3509 0.865275 8.86093 0.206909 7.05908 0.206909C3.3861 0.206909 0.406128 3.18688 0.406128 6.85987C0.406128 10.5675 3.3861 13.5128 7.05908 13.5128C10.9053 13.5128 13.4695 10.8447 13.4695 7.03312C13.4695 6.58266 13.4002 6.2708 13.3655 5.92429ZM19.7759 6.1322V4.2264H17.8355V6.1322H15.895V8.07264H17.8355V10.0131H19.7759V8.07264H21.7164V6.1322H19.7759Z" fill="#1664F9"/>
+                                    </svg>                                       
+                                </div>
+                            </div>
+                            <div class="icon">
+                                <div class="circle">
+                                    <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="change-color" d="M16.8422 3.77594C17.5352 3.25618 18.159 2.63247 18.6441 1.9048C18.0203 2.18201 17.2927 2.38991 16.565 2.45921C17.3273 2.00875 17.8817 1.31574 18.159 0.449465C17.4659 0.865275 16.669 1.17713 15.872 1.35039C15.179 0.622719 14.2434 0.206909 13.2039 0.206909C11.1941 0.206909 9.56555 1.8355 9.56555 3.84524C9.56555 4.12245 9.6002 4.39966 9.6695 4.67686C6.65488 4.50361 3.95212 3.04828 2.15028 0.865275C1.83842 1.38504 1.66517 2.00875 1.66517 2.70177C1.66517 3.9492 2.28888 5.05802 3.29376 5.71639C2.70469 5.68174 2.11563 5.54313 1.63052 5.26593V5.30058C1.63052 7.06777 2.87795 8.5231 4.54118 8.86961C4.26398 8.93891 3.91747 9.00821 3.60561 9.00821C3.36306 9.00821 3.15515 8.97356 2.9126 8.93891C3.36306 10.3942 4.71444 11.4338 6.30838 11.4684C5.06095 12.4386 3.50166 13.0277 1.80377 13.0277C1.49191 13.0277 1.21471 12.9931 0.9375 12.9584C2.53144 13.9979 4.43723 14.587 6.51628 14.587C13.2039 14.587 16.8422 9.07752 16.8422 4.26105C16.8422 4.0878 16.8422 3.9492 16.8422 3.77594Z" fill="#1664F9"/>
+                                    </svg>                                           
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 f-secound">
+                        <h4 class="footer-title">Services</h4>
+                        <ul class="footer-ul">
+                            <li><a href="#">Online Courses</a></li>
+                            <li><a href="#">Web Design</a></li>
+                            <li><a href="#">Graphics Design</a></li>
+                            <li><a href="#">Web Development </a></li>
+                            <li><a href="#">Ui/ Ux Design </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 f-third">
+                        <h4 class="footer-title">Support</h4>
+                        <ul class="footer-ul">
+                            <li><a href="#">Account</a></li>
+                            <li><a href="#">Legal</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Teams & Condition</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul >
+                    </div>
+                    <div class="col-lg-3 f-fourth">
+                        <h4 class="footer-title">Links</h4>
+                        <ul class="footer-ul">
+                            <li><a href="#">Professional Trainer</a></li>
+                            <li><a href="#">Live Booking </a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Working Agent</a></li>
+                            <li><a href="#">Our Team</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="footer-bottom">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>Created  by  Abdullah_Mamun. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+        
+     </footer>
+     
+
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+        var swiper = new Swiper(".blog-slider", {
+      loop: true,
+      speed: 1000,
+      autoplay:{
+         delay: 2000,
+      },
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        576: {
+          slidesPerView: 1,
+          
+        },
+        768: {
+          slidesPerView: 2,
+          
+        },
+        992: {
+          slidesPerView: 3,
+        },
+      },
+    });
+    </script>
 </body>
 </html>
